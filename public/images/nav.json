@@ -1,0 +1,16 @@
+[{"id":"account_system_4","pid":4,"key":"account_system","text":"Account System","name":"Account System","display_name":"Account System","description":"Account System","type":2,"db_name":null,"port":null,"_create":false,"_read":false,"_update":false,"_delete":false,"locked":false,"parent":1,"online":false,"leaf":true,"childType":3,"children":[{"id":"designation_list_42","pid":42,"key":"designation_list","text":"Designation List","name":"Designation List","display_name":"Designation List","description":"Designation List","type":3,"db_name":null,"port":null,"_create":true,"_read":false,"_update":false,"_delete":false,"locked":false,"parent":4,"online":false,"leaf":true,"childType":3,"children":[{"id":"salary_list_46","pid":46,"key":"salary_list","text":"Salary List","name":"Salary List","display_name":"Salary List","description":"Salary List","type":3,"db_name":null,"port":null,"_create":true,"_read":true,"_update":true,"_delete":true,"locked":false,"parent":42,"online":false,"leaf":true,"childType":false,"children":[]}]},{"id":"section_list_44","pid":44,"key":"section_list","text":"Section List","name":"Section List","display_name":"Section List","description":"Section List","type":3,"db_name":null,"port":null,"_create":true,"_read":false,"_update":true,"_delete":true,"locked":false,"parent":4,"online":false,"leaf":true,"childType":false,"children":[]}]}]
+
+//[
+//         { text:"detention", expanded: true, leaf: true },
+         { text:"homework", expanded: false,
+             children: [
+                 { text:"book report", leaf: false },
+                 { text:"alegrbra", leaf: false},
+                 { text:"alegrbra", leaf: false},
+                 { text:"alegrbra", leaf: false},
+                 { text:"alegrbra", leaf: false},
+                 { text:"alegrbra", leaf: false}
+             ]
+         }
+//         { text: "buy lottery tickets", leaf:true }
+//     ]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%- title %></title>
+    <script type="text/javascript" src="/extjs/ext-all.js"></script>
+    <script type="text/javascript" src="/extjs/build/ext-theme-classic.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io();
+        // var sessioning = req.session.current.children;
+        var user = {};
+        var title = '';
+    </script>
+
+    <script type="text/javascript">
+        <!--let sss = '<%- mySession %>';-->
+        console.log(JSON.parse(sss))
+        title = '<%- title %>';
+        user.username = '<%- loginUserName %>';
+        user.id = '<%- loginUserId %>';
+        
+        Ext.Loader.setConfig({
+            enabled: true,
+            disableCaching: true
+        });
+        Ext.require([
+            'Ext.panel.Panel',
+            'Ext.window.MessageBox',
+            'Ext.chart.*'
+        ]);
+        Ext.onReady(function() {
+            Ext.create('Ext.container.Viewport', {
+                layout: 'border',
+                items: [navigation_panel, tab_panel, footer_panel]
+            });
+        })
+    </script>
+    <link rel="stylesheet" href="/extjs/build/resources/ext-theme-classic-all.css">
+    <%-  extjs_app_scripts %>
+</head>
+</html>
